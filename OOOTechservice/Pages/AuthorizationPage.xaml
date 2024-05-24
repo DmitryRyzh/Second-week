@@ -1,0 +1,43 @@
+﻿<Page x:Class="OOOTechservice.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OOOTechservice.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0">
+            <Image Source="C:\Users\ryzhenkov_da\source\repos\OOOTechservice\Images\Логотип.png"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Логин" Margin="10 0"/>
+                    <TextBox x:Name="loginn" Width="150" Margin="8 0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Пароль" Margin="10 0"/>
+                    <PasswordBox x:Name="passwordd" Width="150" />
+                </StackPanel>
+                <Button x:Name="logIn" Click="logIn_Click" Content="ВХОД"/>
+                <TextBlock HorizontalAlignment="Center"><Hyperlink Click="Hyperlink_Click">Войти</Hyperlink></TextBlock>
+            </StackPanel>
+        </Viewbox>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="237,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>

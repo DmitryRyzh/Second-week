@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8ba62744721c4e819152204a963f3258" Name="Diagram1">
+        <EntityTypeShape EntityType="user11Model.Breaks" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Clients" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Equipment" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Orders" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Progress" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Roles" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Status" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Tasks" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="user11Model.Users" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="user11Model.FK_Orders_Breaks" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Orders_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Orders_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Orders_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Tasks_Progress" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="user11Model.FK_Tasks_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

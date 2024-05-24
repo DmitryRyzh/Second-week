@@ -1,0 +1,63 @@
+﻿<Page x:Class="OOOTechservice.Pages.ListOrders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OOOTechservice.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Список">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1">
+                    <Button Content="Назад" Height="30" Width="130" Margin="15" Click="Button_Click"  />
+                </Viewbox>
+            </Grid>
+
+
+            <Viewbox Grid.Column="0">
+                <Viewbox>
+                    <TextBlock Text="Просмотр заказов" FontWeight="Bold" Margin="10" Height="20" Width="200"/>
+                </Viewbox>
+            </Viewbox>
+        </Grid>
+
+
+
+
+
+
+        <ListView Grid.Row="1" Name="listView" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Номер заказа" DisplayMemberBinding="{Binding Id}" Width="100"/>
+                    <GridViewColumn Header="Имя клиента" DisplayMemberBinding="{Binding ClientName}" Width="150"/>
+                    <GridViewColumn Header="Фамилия клиента" DisplayMemberBinding="{Binding ClientSurname}" Width="150"/>
+                    <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding StatusBar}" Width="100"/>
+                    <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding Description}" Width="100" />
+                    <GridViewColumn Header="Поломка" DisplayMemberBinding="{Binding Break}" Width="100"/>
+                    <GridViewColumn Header="Задачи" DisplayMemberBinding="{Binding Task}" Width="100"/>
+                    <GridViewColumn Header="Оборудование" DisplayMemberBinding="{Binding Equipment}" Width="100"/>
+                    <GridViewColumn Header="Дата начала" DisplayMemberBinding="{Binding DateStart}" Width="150"/>
+                    <GridViewColumn Header="Дата окончания" DisplayMemberBinding="{Binding DateEnd}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

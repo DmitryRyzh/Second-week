@@ -1,0 +1,150 @@
+﻿<Page x:Class="OOOTechservice.Pages.MakeOrders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OOOTechservice.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="680"
+      Title="MakeOrders">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+           
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Viewbox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
+            <TextBlock Text="Создание заказа" FontWeight="Bold" FontSize="16" Width="130"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="Имя клиента:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" >
+            <TextBox x:Name="clientNamee" Width="200" />
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Grid.Column="0">
+            <TextBlock Text="Фамилия клиента:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="clientSurnamee" Width="200"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="3" Grid.Column="0">
+            <TextBlock Text="Почта клиента:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="clientEmail" Width="200"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="0">
+            <TextBlock Text="Статус:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+            <ComboBox x:Name="statusComboBox" Width="245">
+                <!-- Предполагается, что вы добавите сюда элементы статусов -->
+            </ComboBox>
+        </Viewbox>
+
+        <Viewbox Grid.Row="5" Grid.Column="0">
+            <TextBlock Text="Брейк:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2">
+            <ComboBox x:Name="breakComboBox" Width="245">
+                <!-- Предполагается, что вы добавите сюда элементы брейков -->
+            </ComboBox>
+        </Viewbox>
+
+        <Viewbox Grid.Row="6" Grid.Column="0">
+            <TextBlock Text="Задача:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="taskTextBox" Width="200"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="7" Grid.Column="0">
+            <TextBlock Text="Описание задачи:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="taskDescription" Width="200"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="8" Grid.Column="0">
+            <TextBlock Text="Статус задачи:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <ComboBox x:Name="taskCombobox" Width="245">
+                <!-- Предполагается, что вы добавите сюда элементы брейков -->
+            </ComboBox>
+        </Viewbox>
+
+        <Viewbox Grid.Row="9" Grid.Column="0">
+            <TextBlock Text="Описание:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="descriptionTextBox" Width="200"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="10" Grid.Column="0">
+            <TextBlock Text="Оборудование:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <ComboBox x:Name="equipmentTextBox" Width="245"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="11" Grid.Column="0">
+            <TextBlock Text="Дата начала:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <DatePicker x:Name="startDatePicker" Width="268"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="12" Grid.Column="0">
+            <TextBlock Text="Дата окончания:" Width="120"/>
+        </Viewbox>
+        <Viewbox Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <DatePicker x:Name="endDatePicker" Width="268"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="14" Grid.Column="0">
+           
+            <Button Content="Назад" Width="100" Click="Button_Click" Margin="1"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="14" Grid.Column="1">
+            <Button Content="Создать заказ" Click="CreateOrderButton_Click" Width="100" Margin="1" />
+        </Viewbox>
+       
+
+    </Grid>
+</Page>
